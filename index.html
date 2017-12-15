@@ -21,8 +21,8 @@
 				</div>
 			</div>	
 			<div class="row input-row"></div>
-				<div class="list-pasta list-group-item" v-for="(pasta, i) in pasta" >
-					<div v-bind:id="i" class="item-pasta" v-for="item in pasta" v-html="item" ></div>
+				<div class="list-pasta list-group-item" v-for="(pasta, i) in pasta" v-bind:id="i">
+					<div class="item-pasta" v-for="item in pasta" v-html="item" ></div>
 				</div>
 			</div>
 		</div>
