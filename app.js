@@ -1,8 +1,7 @@
 var v = new Vue({
     el: "#vue-app",
     data: {
-        pasta: [],
-        search: ''
+        pasta: []
     },
     mounted: function(){
         this.loadPasta();
@@ -17,7 +16,7 @@ var v = new Vue({
                 console.log(error);
             });
         },
-        searchPasta: function(){
+        reverseList: function(){
             v.pasta.reverse();
         }
     }
