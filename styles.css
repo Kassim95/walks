@@ -1,5 +1,6 @@
-html,body{
+html,body, #vue-app{
     font-family:'Avenir Next';
+    background-color: #D1DEEE;
 }
 .list-pasta{
     border: 1px solid black;
@@ -14,7 +15,4 @@ html,body{
 }
 .btn-row{
     margin-top: 40px;
-}
-html, body, #vue-app{
-    background-color: #D1DEEE;
 }

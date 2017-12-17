@@ -17,7 +17,18 @@ var v = new Vue({
             });
         },
         reverseList: function(){
-            v.pasta.reverse();
+            return v.pasta.reverse();
+        },
+        shuffleList: function(){
+            var j, x, i;
+            for (i = v.pasta.length - 1; i > 0; i--) {
+                j = Math.floor(Math.random() * (i + 1));
+                x = v.pasta[i];
+                v.pasta[i] = v.pasta[j];
+                v.pasta[j] = x;
+            }
+            v.$forceUpdate();
+            return v.pasta;
         }
     }
 });
